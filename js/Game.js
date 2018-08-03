@@ -8,7 +8,7 @@
   Amaranthine.GAME_HEALTH_AVG = 100;
   Amaranthine.GAME_ATTACK_AVG = 10;
   Amaranthine.GAME_NORMAL_SPEED = 1;
-  Amaranthine.GAME_FULL_SPEED = 2;
+  Amaranthine.GAME_FULL_SPEED = 1;
   Amaranthine.GAME_EVENT_PROBABILITY = 0.70;
   Amaranthine.GAME_ATTACK_EFFICIENCY = 0.20;
   Amaranthine.GAME_EVADE_PROBABILITY = 0.50;
@@ -33,10 +33,10 @@
     day: 0,
     distance: 0,
     amalgam: 0,
-    food: 40,
+    food: 50,
     health: 100,
     attack: 20,
-    money: 30
+    money: 50
     });
     
     //Update / Passing References
@@ -100,13 +100,7 @@
     if(this.adventure.food === 0) {
       this.ui.notify('Sadly, our young hero died because of starvation.', 'negative');
       this.gameActive = false;
-      //if (window.confirm("Seems like your hero was died. Do you want to restart the game?") == true) {
-        //window.alert("Redirecting you to other hero...");
-        //setTimeout(2000);
-        //window.location = "file:///C:/xampp/htdocs/amaranthine/index.html";
-        //} else {
-          //window.alert("Well.. have a nice day, human!");
-      //}
+      Amaranthine.UI.finalSequence();
     };
     
     //Distance Update
@@ -117,6 +111,7 @@
       this.adventure.health = 0;
       this.ui.notify('Tragically, our young hero died on it\'s adventure.','negative');
       this.gameActive = false;
+      Amaranthine.UI.finalSequence();
     };
     
     //Winning The Game
@@ -124,12 +119,14 @@
     {
       this.ui.notify('By it\'s hope and strength, our young hero finally find itself a place to serve it\'s kind.');
       this.gameActive = false;
+      Amaranthine.UI.finalSequence();
     };
     
     if(this.adventure.amalgam >= 10)
     {
       this.ui.notify('With the power of Amalgam, our brave hero find itself a heaven to stay.')
       this.gameActive = false;
+      Amaranthine.UI.finalSequence();
     };
     
     //Events Update
@@ -140,12 +137,6 @@
     else {
       this.eventManagement.generateIdle();
     }
-    
-    /*
-    if(Math.random() <= Amaranthine.GAME_AMALGAM_PROB) {
-      this.eventManagement.generateAmalgam();
-    };
-    */
   };
 
   //Pause The Game

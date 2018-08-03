@@ -63,6 +63,11 @@
   font-size: 12px;
 }
 
+#restart {
+  text-align: center;
+}
+
+
 #shop button {
   clear: none;
   float: justify;

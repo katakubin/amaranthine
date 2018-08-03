@@ -23,16 +23,20 @@ Amaranthine.UI.refreshStats = function() {
   //document.getElementById('adventure').style.left = (500 * this.adventure.distance/Amaranthine.GAME_FINAL_DISTANCE);
 };
 
-//Amaranthine.UI.startTheGame = function(){
-  //document.getElementById('gameStart').addEventListener('click', function() { 
-    //Ammaranthine.Game.commandSequence = true;
-  //});
-//}
+Amaranthine.UI.finalSequence = function() {
+  document.getElementById('restart').classList.remove('hidden');
+  
+  document.getElementById('final-description').innerHTML = "Our Hero Survived Over " 
+  + Math.ceil(this.adventure.day) + " Days, " + Math.ceil(this.adventure.distance)
+  + " Distance, and " + Math.ceil(this.adventure.amalgam) + " Amalgam!";
+  
+  document.getElementById('game').classList.add('hidden');
+  
+};
 
 //Show NPC
 Amaranthine.UI.showNpc = function(text, item, quantity, prob, itemprize, valueprize){
-  var npcDiv = document.getElementById('npc');
-  npcDiv.classList.remove('hidden');
+  document.getElementById('npc').classList.remove('hidden');
   
   this.text = text;
   this.item = item;
