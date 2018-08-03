@@ -1,0 +1,15 @@
+document.write("<ul uk-accordion style=\"font-family: Courier\">");
+document.write("<li>");
+document.write("<a class=\"uk-accordion-title\" href=\"#\">Test Launch - (dev 1.0.0)<\/a>");
+document.write("<div class=\"uk-accordion-content\">");
+document.write("<p class=\"uk-text-primary\">Date : 2nd August 2018<\/p>");
+document.write("<p class=\"uk-text-meta\">While the game isn't perfect, we're trying our best to develop & launch it on the web to test the respond based on user experience and also other platform experience (PC \/ Mobile).");
+document.write("<\/p>");
+document.write("<p class=\"uk-text-meta\">Features that include in this version :");
+document.write("<p class=\"uk-text-meta\">Early Game Concept: fast yet simple auto-generated text-based game<\/p>");
+document.write("<p class=\"uk-text-meta\">Win the game either by reaching the Distance or get the Amalgam<\/p>");
+document.write("<p class=\"uk-text-meta\">Hero will find various action (for now, only store & enemy)<\/p>");
+document.write("<p class=\"uk-text-meta\">Cause \/ Effect that comes in various moment (random-based)<\/p>");
+document.write("<\/div>");
+document.write("<\/li>");
+document.write("<\/ul>");

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Amaranthine : By Katakubin</title>
+    <link rel="stylesheet" href="uikit/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="uikit/js/uikit.min.js"></script>
+    <script src="uikit/js/uikit-icons.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="uk-container" style="font-family: Courier">
+    <br>
+      <div id="title">
+        <div class="uk-column-1-2@xl uk-text-center">
+          <p class="uk-heading-hero">Amaranthine</p>
+          <p class="uk-text-muted">A Game by : Katakubin (Akhmad Redha P)</p>
+        </div>
+      </div>
+      <hr>
+      
+      <div id="message">
+        <div class="uk-alert-success" uk-alert>
+          <a class="uk-alert-close" uk-close></a>
+          <p>Welcome to Amaranthine! For now, we're in early development. Have fun & enjoy the game!</p>
+        </div>
+        <article class="uk-article uk-text-justify">
+          <p class="uk-text-meta"><i>Amaranthine</i> (am·a·ran·thine; ăm′ə-răn′thĭn) 
+          is a text-based game that automatically generate the adventure. <i class="uk-text-primary">The Goal</i>
+          is simple: either you <i class="uk-text-success">archive 2000 points of Distance</i>, or 
+          <i class="uk-text-success">get 10 Amalgam</i>. For the game itself, we're trying our best to make it
+          as simple as possible yet still having an improvement by doing so.</p>
+          <p class="uk-text-meta">For more information about our game (or other stuff), check out our changelog 
+          (it's below the game!). Also, if you're intrested in developing the game (yes! it's free to use!), check out 
+          our <a href="">Github</a>. For those who like to learn more about the game (or even the logic of it), 
+          just <a href="http://line.me/ti/p/~manztellen">leave us a message</a></p>
+        </article>
+      </div>
+      <hr>
+      
+      <!--<div id="start">-->
+        <!--<button id="gameStart" class="uk-button-default">Start The Game</button>-->
+        <!--<hr>-->
+      <!--</div>-->
+      
+      <div id="home"></div>
+        <div id="game">
+          <div id="adventure">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="stats-area">
+                  <div class="uk-column-1-8 uk-align-justify">
+                    <hr>
+                    <div class="stat">Day <span id="stat-day" class="stat-value"></span></div>
+                    <hr>
+                    <div class="stat">Distance <span id="stat-distance" class="stat-value"></span></div>
+                    <hr>
+                    <div class="stat">Amalgam <span id="stat-amalgam" class="stat-value"></span></div>
+                    <hr>
+                    <div class="stat">Food <span id="stat-food" class="stat-value"></span></div>
+                    <hr>
+                    <div class="stat">Health <span id="stat-health" class="stat-value"></span></div>
+                    <hr>
+                    <div class="stat">Attack <span id="stat-attack" class="stat-value"></span></div>
+                    <hr>
+                    <div class="stat">Money <span id="stat-money" class="stat-value"></span></div>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <div class="updates-area uk-align-center@l uk-margin-small-top" id="updates-area"></div>
+              </div>  
+                
+              <div class="col-md-4">
+                
+                <div id="npc" class="hidden">
+                  <h2>Event</h2>
+                  <div id="npc-description"></div>
+                  <div class="uk-flex">
+                    <button id="npcyes" class="uk-button-primary uk-margin-small-right">Yes</button>
+                    <button id="npcno" class="uk-button-default">No</button>
+                  </div>
+                </div>
+                
+                <div id="shop" class="hidden">
+                  <h2>Store</h2>
+                  <div id="prods"></div>
+                  <button class="uk-button-default">Leave Store</button>
+                </div>
+                
+                <div id="attack" class="hidden">
+                  <h2>Attack Sequence</h2>
+                  <div id="attack-description"></div>
+                  <div class="uk-flex">
+                    <button id="fight" class="uk-button-danger uk-margin-small-right">Fight</button>
+                    <button id="runaway" class="uk-button-default">Run Away</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <br>
+      
+      <h2 class="uk-text-center">Changelog</h2>
+      <hr>
+      <div id="changelog">
+        <article class="uk-article uk-text-justify">
+          <script src="log.js"></script>
+          </article>
+      </div>
+      <hr>
+      
+      <div id="footer">
+        <p class="uk-text-center">Katakubin © 2018</p>
+      </div>
+    </div>
+    
+    <div id="event"></div>
+      <script src="js/Event.js"></script>
+      <script src="js/Adventure.js"></script>
+      <script src="js/UI.js"></script>
+      <script src="js/Game.js"></script>
+    </div>
+  </body>
+</html>
