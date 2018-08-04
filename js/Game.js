@@ -101,6 +101,7 @@
       this.ui.notify('Sadly, our young hero died because of starvation.', 'negative');
       this.gameActive = false;
       Amaranthine.UI.finalSequence();
+      document.getElementById('cause').innerHTML = '<br><p class="uk-text-center"> Cause Of Death : <b class="uk-text-danger">Starvation<b><p>';
     };
     
     //Distance Update
@@ -112,6 +113,7 @@
       this.ui.notify('Tragically, our young hero died on it\'s adventure.','negative');
       this.gameActive = false;
       Amaranthine.UI.finalSequence();
+      document.getElementById('cause').innerHTML = '<br><p class="uk-text-center"> Cause Of Death : <b class="uk-text-danger">Killed<b><p>';
     };
     
     //Winning The Game

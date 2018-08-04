@@ -10,6 +10,7 @@
     <script src="uikit/js/uikit.min.js"></script>
     <script src="uikit/js/uikit-icons.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="lorem-js/lorem.js"></script>
   </head>
   <body>
     <div class="uk-container" style="font-family: Courier">
@@ -43,7 +44,12 @@
       
       <div id="restart" class="hidden">
         <div id="final-description"></div>
+        <br>
         <button class="uk-button-default" onclick="restart()">Move To Next Hero</button>
+        <br><br>
+        <p class="uk-text-meta">Final Result</p>
+        <div id="final-result"></div>
+        <div id="cause"></div>
         <hr>
       </div>
       
@@ -139,7 +145,7 @@
       </div>
     </div>
     
-    <div id="event"></div>
+    <div class="event">
       <script src="js/Event.js"></script>
       <script src="js/Adventure.js"></script>
       <script src="js/UI.js"></script>
