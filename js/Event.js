@@ -59,337 +59,337 @@ Amaranthine.Event.idlingTypes = [
 
 //Arrange The State Event
 Amaranthine.Event.eventTypes = [
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'health',
-    //value: 1,
-    //text: 'Because of it\'s clean attitude, our hero gain an extra health! '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'health',
-    //value: 3,
-    //text: 'Seize the day! Our hero gain health for it\'s daily routine. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'health',
-    //value: 5,
-    //text: 'Experimenting with it\'s body, in result of making our hero more healthier! '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'health',
-    //value: 7,
-    //text: 'Learning some alchemy aren\'t that bad. Thus our hero gain more health because of it\'s learning! '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'negative',
-    //stat: 'health',
-    //value: -2,
-    //text: 'Our hero got itself a stumbled toe for starting the day. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'negative',
-    //stat: 'health',
-    //value: -3,
-    //text: 'Cat aren\'t hero best friend. It learns it in a hard way. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'negative',
-    //stat: 'health',
-    //value: -4,
-    //text: 'It\'s not worthed to interrupt the bee for it\'s honey.. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'negative',
-    //stat: 'health',
-    //value: -6,
-    //text: 'Life lesson : never eat a half-rotten apple. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'negative',
-    //stat: 'health',
-    //value: -16,
-    //text: 'Those who said that salmon are better to be eaten raw.. they definitely lie about it. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'negative',
-    //stat: 'health',
-    //value: -25,
-    //text: 'Our hero accidentally steps on a bear\'s food, while the bear eating it. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'food',
-    //value: 1,
-    //text: 'Our hero trying to take a diet, by eating an ant for a whole day. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'food',
-    //value: 3,
-    //text: 'Food efficiency makes our hero more wise upon stockpiling. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'food',
-    //value: 5,
-    //text: 'Apple tree! Our hero so stocked about it. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'food',
-    //value: 10,
-    //text: 'Found a pond! Definitely a good time for fishing. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'negative',
-    //stat: 'food',
-    //value: -3,
-    //text: 'Our hero forgot to count it\'s food stock, in result of missing some food. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'negative',
-    //stat: 'food',
-    //value: -5,
-    //text: 'Seems like our hero are having a tough day. More food to waste. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'attack',
-    //value: 1,
-    //text: 'Training makes your attack more sharper than before! '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'attack',
-    //value: 2,
-    //text: 'By welding it\'s sword, our hero got itself a good result of it! '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'attack',
-    //value: 3,
-    //text: 'By welding the sword, our hero got itself a good result of it! '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'negative',
-    //stat: 'attack',
-    //value: -1,
-    //text: 'Layoffs aren\'t good for your body. Thus our hero lose some charm. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'money',
-    //value: 10,
-    //text: 'Our hero can\'t eat raw nectar. Thankfully our hero can sold it to someone. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'money',
-    //value: 20,
-    //text: 'Bronze ore has a same value as our currency. Better keep it. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'money',
-    //value: 25,
-    //text: 'Our hero finds a common herb that store people like. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'money',
-    //value: 40,
-    //text: 'They said that an alumunium has it\'s price nowadays. Better keep it. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'money',
-    //value: 75,
-    //text: 'Silver it\'s better than bronze!. Better keep it. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'positive',
-    //stat: 'money',
-    //value: -30,
-    //text: 'Our hero need a new soap. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'negative',
-    //stat: 'money',
-    //value: -55,
-    //text: 'While our hero counts the remaining money, some of it runaway by a gust of wind. '
-  //},
-  //{
-    //type: 'STAT-CHANGE',
-    //notification: 'negative',
-    //stat: 'money',
-    //value: -100,
-    //text: 'Better check the pocket, cause there\'s hole in it. '
-  //},
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'health',
+    value: 1,
+    text: 'Because of it\'s clean attitude, our hero gain an extra health! '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'health',
+    value: 3,
+    text: 'Seize the day! Our hero gain health for it\'s daily routine. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'health',
+    value: 5,
+    text: 'Experimenting with it\'s body, in result of making our hero more healthier! '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'health',
+    value: 7,
+    text: 'Learning some alchemy aren\'t that bad. Thus our hero gain more health because of it\'s learning! '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'negative',
+    stat: 'health',
+    value: -2,
+    text: 'Our hero got itself a stumbled toe for starting the day. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'negative',
+    stat: 'health',
+    value: -3,
+    text: 'Cat aren\'t hero best friend. It learns it in a hard way. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'negative',
+    stat: 'health',
+    value: -4,
+    text: 'It\'s not worthed to interrupt the bee for it\'s honey.. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'negative',
+    stat: 'health',
+    value: -6,
+    text: 'Life lesson : never eat a half-rotten apple. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'negative',
+    stat: 'health',
+    value: -16,
+    text: 'Those who said that salmon are better to be eaten raw.. they definitely lie about it. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'negative',
+    stat: 'health',
+    value: -25,
+    text: 'Our hero accidentally steps on a bear\'s food, while the bear eating it. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'food',
+    value: 1,
+    text: 'Our hero trying to take a diet, by eating an ant for a whole day. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'food',
+    value: 3,
+    text: 'Food efficiency makes our hero more wise upon stockpiling. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'food',
+    value: 5,
+    text: 'Apple tree! Our hero so stocked about it. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'food',
+    value: 10,
+    text: 'Found a pond! Definitely a good time for fishing. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'negative',
+    stat: 'food',
+    value: -3,
+    text: 'Our hero forgot to count it\'s food stock, in result of missing some food. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'negative',
+    stat: 'food',
+    value: -5,
+    text: 'Seems like our hero are having a tough day. More food to waste. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'attack',
+    value: 1,
+    text: 'Training makes your attack more sharper than before! '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'attack',
+    value: 2,
+    text: 'By welding it\'s sword, our hero got itself a good result of it! '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'attack',
+    value: 3,
+    text: 'By welding the sword, our hero got itself a good result of it! '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'negative',
+    stat: 'attack',
+    value: -1,
+    text: 'Layoffs aren\'t good for your body. Thus our hero lose some charm. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'money',
+    value: 10,
+    text: 'Our hero can\'t eat raw nectar. Thankfully our hero can sold it to someone. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'money',
+    value: 20,
+    text: 'Bronze ore has a same value as our currency. Better keep it. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'money',
+    value: 25,
+    text: 'Our hero finds a common herb that store people like. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'money',
+    value: 40,
+    text: 'They said that an alumunium has it\'s price nowadays. Better keep it. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'money',
+    value: 75,
+    text: 'Silver it\'s better than bronze!. Better keep it. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'money',
+    value: -30,
+    text: 'Our hero need a new soap. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'negative',
+    stat: 'money',
+    value: -55,
+    text: 'While our hero counts the remaining money, some of it runaway by a gust of wind. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'negative',
+    stat: 'money',
+    value: -100,
+    text: 'Better check the pocket, cause there\'s hole in it. '
+  },
   {
     type: 'IMPORTANT-AM',
     notification: 'primary',
     stat: 'amalgam'
   },
-  //{
-    //type: 'STORE',
-    //notification: 'secondary',
-    //text: 'In between the forest, our hero finds itself a store. ',
-    //products: [
-      //{item: 'food', quantity: 40, price: 200},
-      //{item: 'amalgam', quantity: 1, price: 550},
-      //{item: 'attack', quantity: 1, price: 100},
-      //{item: 'health', quantity: 10, price: 50}
-    //]
-  //},
-  //{
-    //type: 'STORE',
-    //notification: 'secondary',
-    //text: 'Our hero goes to a local store.',
-    //products: [
-      //{item: 'food', quantity: 20, price: 80},
-      //{item: 'amalgam', quantity: 1, price: 350},
-      //{item: 'attack', quantity: 2, price: 130},
-      //{item: 'health', quantity: 20, price: 80}
-    //]
-  //},
-  //{
-    //type: 'STORE',
-    //notification: 'secondary',
-    //text: 'Our hero finds itself in a native store.',
-    //products: [
-      //{item: 'food', quantity: 40, price: 200},
-      //{item: 'amalgam', quantity: 1, price: 550},
-      //{item: 'attack', quantity: 1, price: 100},
-      //{item: 'health', quantity: 10, price: 50}
-    //]
-  //},
-  //{
-    //type: 'STORE',
-    //notification: 'secondary',
-    //text: 'By some sight, our hero finds itself a village store to stock.',
-    //products: [
-      //{item: 'food', quantity: 10, price: 60},
-      //{item: 'attack', quantity: 3, price: 80},
-      //{item: 'health', quantity: 20, price: 70}
-    //]
-  //},
-  //{
-    //type: 'STORE',
-    //notification: 'secondary',
-    //text: 'Seems like a gigantic store blocks our way. Time to check it out.',
-    //products: [
-      //{item: 'food', quantity: 80, price: 330},
-      //{item: 'amalgam', quantity: 3, price: 1000},
-      //{item: 'attack', quantity: 5, price: 410},
-      //{item: 'health', quantity: 40, price: 300}
-    //]
-  //},
-  //{
-    //type: 'ATTACK',
-    //notification: 'negative',
-    //text: 'Our hero got ambushed by an Anomaly Object!'
-  //},
-  //{
-    //type: 'ATTACK',
-    //notification: 'negative',
-    //text: 'Our hero got ambushed by a Bandit!'
-  //},
-  //{
-    //type: 'ATTACK',
-    //notification: 'negative',
-    //text: 'Our hero got ambushed by a Corrupted Feline!'
-  //},
-  //{
-    //type: 'ATTACK',
-    //notification: 'negative',
-    //text: 'Our hero got ambushed by a Demented Soul!'
-  //},
-  //{
-    //type: 'ATTACK',
-    //notification: 'negative',
-    //text: 'Our hero got ambushed by an Ex-Guard!'
-  //},
-  //{
-    //type: 'ATTACK',
-    //notification: 'negative',
-    //text: 'Our hero got ambushed by an Idleness!'
-  //},
-  //{
-    //type: 'ATTACK',
-    //notification: 'negative',
-    //text: 'Our hero got ambushed by a Morphling!'
-  //},
-  //{
-    //type: 'ATTACK',
-    //notification: 'negative',
-    //text: 'Our hero got ambushed by a Slime!'
-  //},
-  //{
-    //type: 'NPC',
-    //notification: 'npc',
-    //item: 'food',
-    //quantity: 20,
-    //itemprize: 'money',
-    //valueprize: 200,
-    //text: 'Our hero stumble upon an old person who\'s looked starving. The person begs our hero to help it\'s hunger.'
-  //},
-  //{
-    //type: 'NPC',
-    //notification: 'npc',
-    //item: 'food',
-    //quantity: 10,
-    //itemprize: 'money',
-    //valueprize: 150,
-    //text: 'While counting the stock, our hero find itself a person who seems to gesture itself a food to beg. '
-  //},
-  //{
-    //type: 'NPC',
-    //notification: 'npc',
-    //item: 'money',
-    //quantity: 80,
-    //itemprize: 'food',
-    //valueprize: 20,
-    //text: 'Upon it\'s road, our hero find itself a person who needs some money for it\'s mutual desire. '
-  //},
-  //{
-    //type: 'NPC',
-    //notification: 'npc',
-    //item: 'money',
-    //quantity: 100,
-    //itemprize: 'food',
-    //valueprize: 50,
-    //text: 'While doing it\'s routine, our hero founds itself a person with a sign that said \'Need Money For Life\' written on it\'s front. '
-  //},
+  {
+    type: 'STORE',
+    notification: 'secondary',
+    text: 'In between the forest, our hero finds itself a store. ',
+    products: [
+      {item: 'food', quantity: 40, price: 200},
+      {item: 'amalgam', quantity: 1, price: 550},
+      {item: 'attack', quantity: 1, price: 100},
+      {item: 'health', quantity: 10, price: 50}
+    ]
+  },
+  {
+    type: 'STORE',
+    notification: 'secondary',
+    text: 'Our hero goes to a local store.',
+    products: [
+      {item: 'food', quantity: 20, price: 80},
+      {item: 'amalgam', quantity: 1, price: 350},
+      {item: 'attack', quantity: 2, price: 130},
+      {item: 'health', quantity: 20, price: 80}
+    ]
+  },
+  {
+    type: 'STORE',
+    notification: 'secondary',
+    text: 'Our hero finds itself in a native store.',
+    products: [
+      {item: 'food', quantity: 40, price: 200},
+      {item: 'amalgam', quantity: 1, price: 550},
+      {item: 'attack', quantity: 1, price: 100},
+      {item: 'health', quantity: 10, price: 50}
+    ]
+  },
+  {
+    type: 'STORE',
+    notification: 'secondary',
+    text: 'By some sight, our hero finds itself a village store to stock.',
+    products: [
+      {item: 'food', quantity: 10, price: 60},
+      {item: 'attack', quantity: 3, price: 80},
+      {item: 'health', quantity: 20, price: 70}
+    ]
+  },
+  {
+    type: 'STORE',
+    notification: 'secondary',
+    text: 'Seems like a gigantic store blocks our way. Time to check it out.',
+    products: [
+      {item: 'food', quantity: 80, price: 330},
+      {item: 'amalgam', quantity: 3, price: 1000},
+      {item: 'attack', quantity: 5, price: 410},
+      {item: 'health', quantity: 40, price: 300}
+    ]
+  },
+  {
+    type: 'ATTACK',
+    notification: 'negative',
+    text: 'Our hero got ambushed by an Anomaly Object!'
+  },
+  {
+    type: 'ATTACK',
+    notification: 'negative',
+    text: 'Our hero got ambushed by a Bandit!'
+  },
+  {
+    type: 'ATTACK',
+    notification: 'negative',
+    text: 'Our hero got ambushed by a Corrupted Feline!'
+  },
+  {
+    type: 'ATTACK',
+    notification: 'negative',
+    text: 'Our hero got ambushed by a Demented Soul!'
+  },
+  {
+    type: 'ATTACK',
+    notification: 'negative',
+    text: 'Our hero got ambushed by an Ex-Guard!'
+  },
+  {
+    type: 'ATTACK',
+    notification: 'negative',
+    text: 'Our hero got ambushed by an Idleness!'
+  },
+  {
+    type: 'ATTACK',
+    notification: 'negative',
+    text: 'Our hero got ambushed by a Morphling!'
+  },
+  {
+    type: 'ATTACK',
+    notification: 'negative',
+    text: 'Our hero got ambushed by a Slime!'
+  },
+  {
+    type: 'NPC',
+    notification: 'npc',
+    item: 'food',
+    quantity: 20,
+    itemprize: 'money',
+    valueprize: 200,
+    text: 'Our hero stumble upon an old person who\'s looked starving. The person begs our hero to help it\'s hunger.'
+  },
+  {
+    type: 'NPC',
+    notification: 'npc',
+    item: 'food',
+    quantity: 10,
+    itemprize: 'money',
+    valueprize: 150,
+    text: 'While counting the stock, our hero find itself a person who seems to gesture itself a food to beg. '
+  },
+  {
+    type: 'NPC',
+    notification: 'npc',
+    item: 'money',
+    quantity: 80,
+    itemprize: 'food',
+    valueprize: 20,
+    text: 'Upon it\'s road, our hero find itself a person who needs some money for it\'s mutual desire. '
+  },
+  {
+    type: 'NPC',
+    notification: 'npc',
+    item: 'money',
+    quantity: 100,
+    itemprize: 'food',
+    valueprize: 50,
+    text: 'While doing it\'s routine, our hero founds itself a person with a sign that said \'Need Money For Life\' written on it\'s front. '
+  },
 ];
 
 Amaranthine.Event.generateEvent = function() {
@@ -487,10 +487,6 @@ Amaranthine.Event.mainEvent = function(eventData) {
     {
       this.ui.notify('Our hero thought that it was an Amalgam. But actually, it\'s a false one. ','neutral');
     }
-  }
-  
-  else if(eventData.type == 'IMPORTANT-EX'){
-  
   }
 };
 
