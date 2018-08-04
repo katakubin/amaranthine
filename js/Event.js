@@ -256,11 +256,6 @@ Amaranthine.Event.eventTypes = [
     text: 'Better check the pocket, cause there\'s hole in it. '
   },
   {
-    type: 'IMPORTANT-AM',
-    notification: 'primary',
-    stat: 'amalgam'
-  },
-  {
     type: 'STORE',
     notification: 'secondary',
     text: 'In between the forest, our hero finds itself a store. ',
@@ -390,6 +385,11 @@ Amaranthine.Event.eventTypes = [
     valueprize: 50,
     text: 'While doing it\'s routine, our hero founds itself a person with a sign that said \'Need Money For Life\' written on it\'s front. '
   },
+  {
+    type: 'IMPORTANT-AM',
+    notification: 'primary',
+    stat: 'amalgam'
+  },
 ];
 
 Amaranthine.Event.generateEvent = function() {
@@ -398,10 +398,6 @@ Amaranthine.Event.generateEvent = function() {
   var eventData = this.eventTypes[eventIndex];
   
   //Events That Focused On Updating The Stats
-  if(eventData.type == 'IMPORTANT-AM' || eventData.type == 'IMPORTANT-EX') {
-    this.mainEvent(eventData);
-  }
-  
   if(eventData.type == 'STAT-CHANGE') {
     this.stateChangeEvent(eventData);
   }
@@ -439,6 +435,10 @@ Amaranthine.Event.generateEvent = function() {
     
     //Prepare Event
     this.attackEvent(eventData);
+  }
+  
+  else if(eventData.type == 'IMPORTANT-AM' || eventData.type == 'IMPORTANT-EX') {
+    this.mainEvent(eventData);
   }
 };
 
