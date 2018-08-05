@@ -3,13 +3,14 @@
   //constants
   Amaranthine.GAME_DAY_PER_STEP = 1;
   Amaranthine.GAME_DISTANCE_FINAL = 2000;
+  Amaranthine.GAME_AMALGAM_FINAL = 10;
   Amaranthine.GAME_SPEED = 780;
   Amaranthine.GAME_FOOD_PER_DAY = 1;
   Amaranthine.GAME_HEALTH_AVG = 100;
   Amaranthine.GAME_ATTACK_AVG = 10;
   Amaranthine.GAME_NORMAL_SPEED = 1;
-  Amaranthine.GAME_FULL_SPEED = 1;
-  Amaranthine.GAME_EVENT_PROBABILITY = 0.70;
+  Amaranthine.GAME_FULL_SPEED = 3;
+  Amaranthine.GAME_EVENT_PROBABILITY = 0.80;
   Amaranthine.GAME_ATTACK_EFFICIENCY = 0.20;
   Amaranthine.GAME_EVADE_PROBABILITY = 0.50;
   Amaranthine.GAME_ENEMY_ATTACK_AVG = 10;
@@ -87,6 +88,7 @@
     if(this.gameActive) window.requestAnimationFrame(this.step.bind(this));
   };
 
+  //Update The Game Based On The Cycle
   Amaranthine.Game.updateGame = function() {
     //Update Stats
     this.ui.refreshStats();
@@ -97,6 +99,7 @@
     //Food Update
     this.adventure.consumeFood();
     
+    //If Hero Has 0 Food, Do This Sequence
     if(this.adventure.food === 0) {
       this.ui.notify('Sadly, our young hero died because of starvation.', 'negative');
       this.gameActive = false;
@@ -108,15 +111,19 @@
     this.adventure.updateDistance();
     
     //Health Update
+    if(this.adventure.health >= 100){
+      this.adventure.health = 100;
+    }
+    
     if(this.adventure.health <= 0){
       this.adventure.health = 0;
       this.ui.notify('Tragically, our young hero died on it\'s adventure.','negative');
       this.gameActive = false;
       Amaranthine.UI.finalSequence();
-      document.getElementById('cause').innerHTML = '<br><p class="uk-text-center"> Cause Of Death : <b class="uk-text-danger">Killed<b><p>';
+      document.getElementById('cause').innerHTML = '<br><p class="uk-text-center"> Cause Of Death : <b class="uk-text-danger">Lack of Health<b><p>';
     };
     
-    //Winning The Game
+    //Winning The Game (based on Distance)
     if(this.adventure.distance >= Amaranthine.GAME_DISTANCE_FINAL)
     {
       this.ui.notify('By it\'s hope and strength, our young hero finally find itself a place to serve it\'s kind.');
@@ -124,7 +131,8 @@
       Amaranthine.UI.finalSequence();
     };
     
-    if(this.adventure.amalgam >= 10)
+    //Winning The Game (based on Amalgam)
+    if(this.adventure.amalgam >= Amaranthine.GAME_AMALGAM_FINAL)
     {
       this.ui.notify('With the power of Amalgam, our brave hero find itself a heaven to stay.')
       this.gameActive = false;
@@ -132,7 +140,7 @@
     };
     
     //Events Update
-    if(Math.random() <= Amaranthine.GAME_EVENT_PROBABILITY) {
+    if(Math.random() + 0.10 < Amaranthine.GAME_EVENT_PROBABILITY) {
       this.eventManagement.generateEvent();
     }
     

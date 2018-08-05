@@ -2,7 +2,24 @@ var Amaranthine = Amaranthine || {}
 
 Amaranthine.Event = {};
 
-//Arrange The Idle Event
+/* [ WILL BE UPDATED SOON! ]
+Amaranthine.Event.specificTypes = [
+  {
+    type: 'SIDE',
+    notification: 'primary',
+    arc: 1,
+    text: 'Our hero finds itself a Cave to explore. '
+  },
+  {
+    type: 'SIDE',
+    notification: 'primary',
+    arc: 2,
+    text: 'Our hero finds itself an Abandoned House to explore. '
+  },
+];
+*/
+
+//Arrange The Idle Event (MERGE IN THE NEXT UPDATE)
 Amaranthine.Event.idlingTypes = [
   {
     type: 'IDLE',
@@ -27,6 +44,26 @@ Amaranthine.Event.idlingTypes = [
   {
     type: 'IDLE',
     notification: 'neutral',
+    text: 'Our hero really like to feed an ant. '
+  },
+  {
+    type: 'IDLE',
+    notification: 'neutral',
+    text: 'Upon it\'s journey, our hero say some prayer for it\'s creator. '
+  },
+  {
+    type: 'IDLE',
+    notification: 'neutral',
+    text: 'Our hero likes to eat an avocado toast. '
+  },
+  {
+    type: 'IDLE',
+    notification: 'neutral',
+    text: 'Our hero making sure that it\'s pocket doesn\'t have any holes in it. '
+  },
+  {
+    type: 'IDLE',
+    notification: 'neutral',
     text: 'Our hero really like to clean up it\'s sword. '
   },
   {
@@ -41,23 +78,7 @@ Amaranthine.Event.idlingTypes = [
   },
 ];
 
-//WILL BE UPDATED SOON
-//Amaranthine.Event.specificTypes = [
-  //{
-    //type: 'SIDE',
-    //notification: 'primary',
-    //arc: 1,
-    //text: 'Our hero finds itself a Cave to explore. '
-  //},
-  //{
-    //type: 'SIDE',
-    //notification: 'primary',
-    //arc: 2,
-    //text: 'Our hero finds itself an Abandoned House to explore. '
-  //},
-//];
-
-//Arrange The State Event
+//Arrange The State Event (WILL RE-ARRANGED IN THE NEXT UPDATE)
 Amaranthine.Event.eventTypes = [
   {
     type: 'STAT-CHANGE',
@@ -89,6 +110,13 @@ Amaranthine.Event.eventTypes = [
   },
   {
     type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'health',
+    value: 12,
+    text: 'Our hero found itself a health kit. '
+  },
+  {
+    type: 'STAT-CHANGE',
     notification: 'negative',
     stat: 'health',
     value: -2,
@@ -99,7 +127,7 @@ Amaranthine.Event.eventTypes = [
     notification: 'negative',
     stat: 'health',
     value: -3,
-    text: 'Cat aren\'t hero best friend. It learns it in a hard way. '
+    text: 'Cat aren\'t hero best friend. Our hero learns it in a hard way. '
   },
   {
     type: 'STAT-CHANGE',
@@ -140,6 +168,13 @@ Amaranthine.Event.eventTypes = [
     type: 'STAT-CHANGE',
     notification: 'positive',
     stat: 'food',
+    value: 2,
+    text: 'Oh look! There\'s a rabbit in hero\'s trap! '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'food',
     value: 3,
     text: 'Food efficiency makes our hero more wise upon stockpiling. '
   },
@@ -154,8 +189,29 @@ Amaranthine.Event.eventTypes = [
     type: 'STAT-CHANGE',
     notification: 'positive',
     stat: 'food',
+    value: 7,
+    text: 'Our hero found itself an abandoned food crate. Thankfully there\'s some food in it. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'food',
     value: 10,
     text: 'Found a pond! Definitely a good time for fishing. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'neutral',
+    stat: 'food',
+    value: 0,
+    text: 'Our hero found itself an abandoned food crate. There\'s nothing in it. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'neutral',
+    stat: 'food',
+    value: -1,
+    text: 'Our hero thinks that a bait can lure an animal for it\'s feast. Still waiting... '
   },
   {
     type: 'STAT-CHANGE',
@@ -203,6 +259,13 @@ Amaranthine.Event.eventTypes = [
     type: 'STAT-CHANGE',
     notification: 'positive',
     stat: 'money',
+    value: 1,
+    text: 'Our hero found a coin. Better keep it. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'money',
     value: 10,
     text: 'Our hero can\'t eat raw nectar. Thankfully our hero can sold it to someone. '
   },
@@ -238,8 +301,29 @@ Amaranthine.Event.eventTypes = [
     type: 'STAT-CHANGE',
     notification: 'positive',
     stat: 'money',
+    value: 100,
+    text: 'Between the pebble, our hero found a $100 bill. Better keep it. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'money',
+    value: -10,
+    text: 'Few coins dropped into a lake. Quite a clumsy. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'money',
     value: -30,
     text: 'Our hero need a new soap. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'negative',
+    stat: 'money',
+    value: -40,
+    text: 'Our hero thinks burying it\'s money was a good keeping idea. Few buries later and our hero forgot the location. '
   },
   {
     type: 'STAT-CHANGE',
@@ -254,11 +338,6 @@ Amaranthine.Event.eventTypes = [
     stat: 'money',
     value: -100,
     text: 'Better check the pocket, cause there\'s hole in it. '
-  },
-  {
-    type: 'IMPORTANT-AM',
-    notification: 'primary',
-    stat: 'amalgam'
   },
   {
     type: 'STORE',
@@ -390,6 +469,11 @@ Amaranthine.Event.eventTypes = [
     valueprize: 50,
     text: 'While doing it\'s routine, our hero founds itself a person with a sign that said \'Need Money For Life\' written on it\'s front. '
   },
+  {
+    type: 'IMPORTANT-AM',
+    notification: 'primary',
+    stat: 'amalgam'
+  },
 ];
 
 Amaranthine.Event.generateEvent = function() {
@@ -398,10 +482,6 @@ Amaranthine.Event.generateEvent = function() {
   var eventData = this.eventTypes[eventIndex];
   
   //Events That Focused On Updating The Stats
-  if(eventData.type == 'IMPORTANT-AM' || eventData.type == 'IMPORTANT-EX') {
-    this.mainEvent(eventData);
-  }
-  
   if(eventData.type == 'STAT-CHANGE') {
     this.stateChangeEvent(eventData);
   }
@@ -439,6 +519,10 @@ Amaranthine.Event.generateEvent = function() {
     
     //Prepare Event
     this.attackEvent(eventData);
+  }
+  
+  else if(eventData.type == 'IMPORTANT-AM' || eventData.type == 'IMPORTANT-EX') {
+    this.mainEvent(eventData);
   }
 };
 
@@ -480,7 +564,7 @@ Amaranthine.Event.mainEvent = function(eventData) {
     if(chance > Amaranthine.GAME_EVENT_PROBABILITY + 0.2){
       var value = 1;
       this.ui.notify('Our hero finds itself an Amalgam! Better keep it. ','positive');
-      this.ui.updateAmalgam(value);
+      Amaranthine.Adventure.amalgam += value;
     }
     
     else

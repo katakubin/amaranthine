@@ -27,11 +27,11 @@ Amaranthine.UI.refreshStats = function() {
 
 //Final Result Before The Hero Lost
 Amaranthine.UI.finalSequence = function() {
-  window.alert('Your hero kneel itself under the lost, while itself say a prayer before it\'s last breath.');
+  window.alert('Your hero kneel itself upon it\'s lost, giving itself a last prayer before eveything went fall.');
   
   document.getElementById('restart').classList.remove('hidden');
   
-  document.getElementById('final-description').innerHTML = "Our Hero Has Been Traveled Over " 
+  document.getElementById('final-description').innerHTML = "Your Hero Has Been Traveled Over " 
   + Math.ceil(this.adventure.day) + " Days, " + Math.ceil(this.adventure.distance)
   + " Distance, and " + Math.ceil(this.adventure.amalgam) + " Amalgam!";
   
@@ -47,11 +47,6 @@ Amaranthine.UI.finalSequence = function() {
   '</div> <div>';
   
 };
-
-//Show Amalgam (Complex Mechanism Soon)
-Amaranthine.UI.updateAmalgam = function(value) {
-  this.adventure.amalgam += value;
-}
 
 //Show NPC
 Amaranthine.UI.showNpc = function(text, item, quantity, prob, itemprize, valueprize){
