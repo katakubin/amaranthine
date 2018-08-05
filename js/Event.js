@@ -182,6 +182,13 @@ Amaranthine.Event.eventTypes = [
     type: 'STAT-CHANGE',
     notification: 'positive',
     stat: 'food',
+    value: 4,
+    text: 'Our hero find itself an abandoned bee hive to dive in. '
+  },
+  {
+    type: 'STAT-CHANGE',
+    notification: 'positive',
+    stat: 'food',
     value: 5,
     text: 'Apple tree! Our hero so stocked about it. '
   },
