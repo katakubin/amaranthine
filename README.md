@@ -1,3 +1,6 @@
+## Message : There Will Be A Massive Changes! So, Be Sure To Fetch Our Initial Release If You Needed To!
+
+
 # Amaranthine ![Build Version](https://img.shields.io/badge/version-dev%201.0.0-yellow.svg)
 
 Check out [our website](https://katakubin.github.io/amaranthine/) for the looks of it!
