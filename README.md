@@ -1,6 +1,3 @@
-## Message : There Will Be A Massive Changes! So, Be Sure To Fetch Our Initial Release If You Needed To!
-
-
 # Amaranthine ![Build Version](https://img.shields.io/badge/version-dev%201.0.0-yellow.svg)
 
 Check out [our website](https://katakubin.github.io/amaranthine/) for the looks of it!
@@ -13,17 +10,20 @@ If you have any problem about the repo, just ask / make some issues about it!
 
 Check out our [release](https://github.com/katakubin/amaranthine/releases/)!
 
-P.S : For our initial (and also before-merged) release, check out [this link](https://github.com/katakubin/amaranthine/releases/tag/v1.0.0-dev)!
+P.S : For our initial release, check out [this link](https://github.com/katakubin/amaranthine/releases/tag/v1.0.0-dev)!
 
 ## FAQ (Frequent Asked Questions)
 
 ### what is amaranthine?
-Amaranthine is a web-based automated text adventure. 
+Amaranthine is a web-based automated text adventure that relies on a simple premise. 
 
-Amaranthine's goal is to make a automated game using a basic web environment. All the events that occur in the game are generated basicly using a simple go-to script. 
+Amaranthine's goal is to make a automated game using a basic web library / language. All the events that occur in the game were simply generated using a go-to script. 
 
 ### are amaranthine is free to use?
-Yes! You can use all the Amaranthine's environment. Feel free to clone our project! Just make sure that your project aren't closely the same as the root of it.
+Yes! Feel free to use and clone our project! (For more information, check out our license).
 
-### are you need to use a specific program to run amaranthine? 
-No! Amaranthine's environments are consists of HTML, CSS, and Javascript. You just need to use a browser (& some text editor to change the looks or codes that you want) in order to run it.
+### do i need to use a specific program to run amaranthine? 
+Not at all! Amaranthine were only consists of HTML, CSS, Javascript, and UIKit (front-end). You just need to use a browser (& some text editor to change the looks or codes that you want) in order to run it.
+
+### do you have any chance to use any third-party language (such as jQuery or such) for supporting your game logic?
+I'm trying my best to use the only basic web language that's already exist, without having to rely on any third-party language.
