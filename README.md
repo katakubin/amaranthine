@@ -1,4 +1,4 @@
-# Amaranthine ![Build Version](https://img.shields.io/badge/version-dev%201.0.0-yellow.svg)
+# Amaranthine ![Build Version](https://img.shields.io/badge/version-dev%200.1.0-yellow.svg)
 
 Check out [our website](https://katakubin.github.io/amaranthine/) for the looks of it!
 
@@ -11,6 +11,8 @@ If you have any problem about the repo, just ask / make some issues about it!
 Check out our [release](https://github.com/katakubin/amaranthine/releases/)!
 
 P.S : For our initial release, check out [this link](https://github.com/katakubin/amaranthine/releases/tag/v1.0.0-dev)!
+
+### As in 23rd August 2019, We revert all the update to Alpha state. As for now, you can still download our initial release before our next update (28th August 2019) 
 
 ## FAQ (Frequent Asked Questions)
 
